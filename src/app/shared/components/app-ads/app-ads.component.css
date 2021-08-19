@@ -1,0 +1,9 @@
+.carousel-inner{
+    height: 400px;
+    margin-top: 50px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.carousel-indicators {
+    bottom: 50px;
+}

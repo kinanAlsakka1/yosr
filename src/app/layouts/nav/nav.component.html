@@ -1,0 +1,34 @@
+<div class="nav-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 pd0 nav-item " (click)="changeTab('home')" [ngClass]="{'active' : tabActive == 'home'}">
+                <span class="nav-icon">
+                    <img  *ngIf="tabActive == 'home'" src="./../../../assets/images/nav-icons/activeHome.svg" alt="home icon" />
+                    <img  *ngIf="tabActive !== 'home'" src="./../../../assets/images/nav-icons/home.svg" alt="home icon" />
+                </span>
+                <span class="nav-text">Home</span>
+            </div>
+            <div class="col-3 pd0 nav-item " (click)="changeTab('search')" [ngClass]="{'active' : tabActive == 'search'}">
+                <span class="nav-icon">
+                    <img *ngIf="tabActive == 'search'" src="./../../../assets/images/nav-icons/activeSearch.svg" alt="search icon" />
+                    <img *ngIf="tabActive !== 'search'" src="./../../../assets/images/nav-icons/search.svg" alt="search icon" />
+                </span>
+                <span class="nav-text">Search</span>
+            </div>
+            <div class="col-3 pd0 nav-item " (click)="changeTab('auctions')" [ngClass]="{'active' : tabActive == 'auctions'}">
+                <span class="nav-icon">
+                    <img *ngIf="tabActive == 'auctions'"  src="./../../../assets/images/nav-icons/activeAuction.svg" alt="auction icon" />
+                    <img *ngIf="tabActive !== 'auctions'"  src="./../../../assets/images/nav-icons/auction.svg" alt="auction icon" />
+                </span>
+                <span class="nav-text">Auctions</span>
+            </div>
+            <div class="col-3 pd0 nav-item " (click)="changeTab('groups')" [ngClass]="{'active' : tabActive == 'groups'}">
+                <span class="nav-icon">
+                    <img  *ngIf="tabActive == 'groups'" src="./../../../assets/images/nav-icons/activeGroup.svg" alt="groups icon" />
+                    <img  *ngIf="tabActive !== 'groups'"  src="./../../../assets/images/nav-icons/group.svg" alt="groups icon" />
+                </span>
+                <span class="nav-text">Groups</span>
+            </div>
+        </div>
+    </div>
+</div>

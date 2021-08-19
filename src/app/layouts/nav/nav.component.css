@@ -1,0 +1,35 @@
+.nav-container{
+    height: 60px;
+    border-bottom: 1px solid #dfe3e8;
+    line-height: 3.5;
+    text-align: center;
+    background : #fff;
+}
+.nav-item{
+    cursor : pointer;
+}
+.nav-item.active{
+    height: 60px;
+    background: linear-gradient(249.59deg,#f03749,#260232) bottom no-repeat;
+    background-size: 90% 2px;
+}
+.nav-icon{
+    height : 30px;
+    width: 30px;
+    margin : 0px 5px;
+}
+.nav-text{
+    font-size: 14px;
+}
+.nav-item.active .nav-text{
+    font-size: 14px;
+    background: linear-gradient(249.59deg,#f03749,#260232) bottom no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-item:hover .nav-text{
+    font-size: 14px;
+    background: linear-gradient(249.59deg,#f03749,#260232) bottom no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

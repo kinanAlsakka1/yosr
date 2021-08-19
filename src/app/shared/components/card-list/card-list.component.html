@@ -1,0 +1,31 @@
+<div class="cards-list-container">
+    <div class="cards-list-tabs">
+        <mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4">
+            <mat-tab label="All"> 
+
+                <div class="row">
+                    <div class="col-3" *ngFor="let card of allCards">
+                        <app-app-card [cardInfo]='card' ></app-app-card>
+                     </div>
+                </div>
+
+            </mat-tab>
+            <mat-tab label="Recommendend for you">
+                <div class="row">
+                    <div class="col-3" *ngFor="let card of recommendendCards">
+                        <app-app-card [cardInfo]='card' ></app-app-card>
+                     </div>
+                </div>
+            </mat-tab>
+            <mat-tab label="Popular"> 
+                <div class="row">
+                    <div class="col-3" *ngFor="let card of popularCards">
+                        <app-app-card [cardInfo]='card' ></app-app-card>
+                     </div>
+                </div>
+            </mat-tab>
+          </mat-tab-group>
+    </div>
+    
+</div>
+

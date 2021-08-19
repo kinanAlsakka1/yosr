@@ -1,0 +1,14 @@
+<div class="card-container">
+    <div>
+        <div class="card-product-image-container">
+             <img class="card-product-image" src="{{cardInfo.image}}" alt="product image" >
+        </div>
+        <img class="card-company-image" src="{{cardInfo.companyImage}}" >
+        <img class="card-fav-icon" src="./../../../assets/images/header-icons/fav.svg" >
+    </div>
+    <div class="card-product-details-container">
+            <div class="card-product-price">{{cardInfo.price}} {{cardInfo.priceUnit}}</div>
+            <div class="card-product-title">{{cardInfo.title}}</div>
+            <div class="card-product-info">{{cardInfo.city}} - {{cardInfo.date}}</div>
+    </div>
+</div>

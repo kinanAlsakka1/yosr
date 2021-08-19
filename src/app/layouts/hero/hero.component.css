@@ -1,0 +1,52 @@
+.hero-container{
+    height : 380px;
+    background: url(./../../../assets/images/hero/mainBK.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+}
+.hero-text{
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    padding-top: 80px;
+}
+.search-box input{
+    height: 70px;
+    width: calc(100% - 70px);
+    background-color: hsla(0,0%,100%,.2);
+    color: #fff;
+    border: 0px;
+    padding-inline-start: 50px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.search-box input::placeholder{
+    color: #fff;
+}
+.search-box label{
+    position: absolute;
+    width: 21px;
+    height: 20px;
+    margin-inline-start: 20px;
+    z-index: 5;
+    line-height: 4.2;
+}
+.search-box button{
+    height: 70px;
+    width: 70px;
+    background: linear-gradient(249.59deg,#f03749,#260232);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: none;
+    outline: none;
+}
+.search-box{
+    margin-top: 55px; 
+}
+.search-box input:focus{
+    border-color: #fff;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px hsl(0deg 0% 100% / 60%);
+    outline: none!important;
+}
